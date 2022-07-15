@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <title>Labulne/contacto</title>
+</head>
+
+<body class="bg">
+  <h1 class="tit">almacen de bebidas</h1>
+  <header class="cab" id="head">
+    <a href="../index.html">
+      <img src="../assets/logo1.jpg" alt="logo_negocio" width="100" height="80" class="cab__nav__menu__imagen" /></a>
+    <nav class="cab__nav">
+      <ul class="cab__nav__menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li>
+          <a href="./sobre_nosotros.html">Sobre Nosotros</a>
+        </li>
+        <li>
+          <a href="./productos.html">Productos</a>
+        </li>
+        <li><a href="./locales.html">Locales</a></li>
+        <li>
+          <a href="./contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <!-- Inicio del formulario -->
+
+  <section class="formulario">
+    <form action="">
+      <fieldset class="formulario__campo">
+        <p>Si desea recibir todas nuestras ofertas, complete el siguiente formulario</p>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu Nombre" />
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu Apellido" />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Ingresa tu Correo Electronico" />
+        <br />
+        <label for="estado_civil">Estado Civil</label>
+        <select name="estado_civil" id="estado_civil">
+          <option value="">Estado Civil</option>
+          <option value="s">Soltero/a</option>
+          <option value="c">Casado/a</option>
+        </select>
+        <br>
+        <textarea name="comentario" id="comentario" cols="40" rows="10" maxlength="200"></textarea>
+        <br>
+        <input type="submit" value="Enviar Formulario" />
+        <input type="reset" value="Limpiar Formulario">
+      </fieldset>
+    </form>
+  </section>
+</main>
+  <!-- Fin del formulario -->
+
+  <footer class="footer" id="foot">
+    <aside class="footer__contacto">
+      <h4>Nuestras redes sociales</h4>
+      <img src="../assets/instagram_logo.png" alt="" height="60" />
+      <img src="../assets/facebook_logo.png" alt="" height="60" />
+      <img src="../assets/whatsapp_logo.png" alt="" height="53" />
+    </aside>
+    <a href="#head" class="footer__contacto--linkarriba">Ir arriba</a>
+  </footer>
+</body>
+
+
+</html>
