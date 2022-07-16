@@ -5,33 +5,34 @@
   /* border: 1px solid black; */
 }
 
-.body{
+.body {
   min-height: 100%;
 }
+
 .grid__container {
   display: grid;
   grid-template-areas:
-  "titulo titulo"
-  "header header"
-  "imagen texto"
-  "footer footer" ;
+    "titulo titulo"
+    "header header"
+    "imagen texto"
+    "footer footer";
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .grid__container {
     display: grid;
     grid-template-areas:
-    "titulo titulo"
-    "header header"
-    "imagen imagen"
-    "texto texto"
-    "footer footer" ;
+      "titulo titulo"
+      "header header"
+      "imagen imagen"
+      "texto texto"
+      "footer footer";
   }
 }
 
 /* Header */
 
-.cab{
+.cab {
   grid-area: header;
 }
 
@@ -47,17 +48,17 @@
 
 }
 
-  @media screen and (max-width: 560px) {
-    .cab__nav__menu {
-      flex-direction: column;
-      padding-bottom: 0.5cm;
-    }
+@media screen and (max-width: 560px) {
+  .cab__nav__menu {
+    flex-direction: column;
+    padding-bottom: 0.5cm;
+  }
 
-    .cab__nav__menu li{
-      justify-self: space-around;
-      align-self: end;
-    }
-  
+  .cab__nav__menu li {
+    justify-self: space-around;
+    align-self: end;
+  }
+
 }
 
 .cab__nav__menu__imagen {
@@ -77,7 +78,7 @@
 }
 
 .tit {
-  grid-area:titulo;
+  grid-area: titulo;
   background-color: orange;
   text-align: center;
   text-transform: uppercase;
@@ -92,12 +93,12 @@
   background-repeat: repeat-y;
 }
 
-.seccion1{
+.seccion1 {
   grid-area: imagen;
 }
 
-.seccion2{
-  grid-area:texto;
+.seccion2 {
+  grid-area: texto;
   height: 10cm;
   display: flex;
   flex-direction: column;
@@ -131,21 +132,22 @@
   text-align: center;
 }
 
-.prod__bebidas__flex{
+.prod__bebidas__flex {
   display: flex;
   justify-content: space-around;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-@media screen and (max-width: 880px){
-  .prod__bebidas__flex{
+@media screen and (max-width: 880px) {
+  .prod__bebidas__flex {
     flex-direction: column;
     justify-content: space-between;
   }
 }
+
 .prod__bebidas__cervezas button {
   padding-right: 0.5cm;
   padding-left: 0.5cm;
@@ -159,7 +161,7 @@ ul{
   padding-top: 2cm;
 }
 
-.textocolor{
+.textocolor {
   color: rgb(0, 0, 0);
   font-size: 50px;
   animation-name: colores;
@@ -171,24 +173,24 @@ ul{
 }
 
 @keyframes colores {
-  0%{
-    color:red;
+  0% {
+    color: red;
   }
 
-  25%{
-    color:orange;
+  25% {
+    color: orange;
   }
 
-  50%{
-    color:yellow;
+  50% {
+    color: yellow;
   }
 
-  75%{
+  75% {
     color: greenyellow;
   }
 
-  100%{
-    color:green;
+  100% {
+    color: green;
   }
 }
 
