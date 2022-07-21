@@ -23,23 +23,35 @@
     <header class="cab" id="head">
       <a href="./index.html">
         <img src="./assets/logo1.png" alt="logo_negocio" width="100" height="80" class="cab__nav__menu__imagen" /></a>
-      <nav class="cab__nav">
-        <ul class="cab__nav__menu">
-          <li><a href="./index.html">Inicio</a></li>
-          <li>
-            <a href="./views/sobre_nosotros.html">Sobre Nosotros</a>
-          </li>
-          <li>
-            <a href="./views/productos.html">Productos</a>
-          </li>
-          <li>
-            <a href="./views/locales.html">Locales</a>
-          </li>
-          <li>
-            <a href="./views/contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="navbar navbar-expand-lg bg-orange">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Busca un producto" aria-label="Search">
+            </form>
+          </div>
+        </nav>
     </header>
 
     <!-- Fin del menu -->
