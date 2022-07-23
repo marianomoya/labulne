@@ -16,7 +16,7 @@
     "header header"
     "imagen texto"
     "footer footer";
-  
+
 }
 
 @media screen and (max-width: 768px) {
@@ -35,7 +35,7 @@
 
 .cab {
   grid-area: header;
-  background: linear-gradient(180deg, rgba(39,38,38,1) 63%, rgba(115,75,4,1) 96%, rgba(255,165,0,1) 100%);
+  background: linear-gradient(180deg, rgba(39, 38, 38, 1) 63%, rgba(115, 75, 4, 1) 96%, rgba(255, 165, 0, 1) 100%);
 }
 
 
@@ -51,7 +51,7 @@
   }
 }
 
-.navbar a{
+.navbar a {
   color: #ffa500;
 }
 
@@ -125,14 +125,6 @@ ul {
   }
 }
 
-.prod__bebidas__cervezas button {
-  padding-right: 0.5cm;
-  padding-left: 0.5cm;
-  border: solid 2px black;
-  border-radius: 5px;
-  background-color: orange;
-  cursor: pointer;
-}
 
 .prod__comestibles {
   padding-top: 2cm;
@@ -203,7 +195,7 @@ ul {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: linear-gradient(270deg, rgba(39,38,38,1) 69%, rgba(50,33,2,1) 100%, rgba(255,165,0,1) 100%);
+  background: linear-gradient(270deg, rgba(39, 38, 38, 1) 69%, rgba(50, 33, 2, 1) 100%, rgba(255, 165, 0, 1) 100%);
   color: orange;
 }
 
