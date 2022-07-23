@@ -16,6 +16,7 @@
     "header header"
     "imagen texto"
     "footer footer";
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -34,10 +35,11 @@
 
 .cab {
   grid-area: header;
+  background: linear-gradient(180deg, rgba(39,38,38,1) 63%, rgba(115,75,4,1) 96%, rgba(255,165,0,1) 100%);
 }
 
 
-.cab__nav__menu {
+/* .cab__nav__menu {
   display: flex;
   justify-content: space-around;
   background-color: orange;
@@ -45,9 +47,7 @@
   text-transform: uppercase;
   height: 2.2cm;
   align-items: center;
-
-
-}
+} */
 
 @media screen and (max-width: 560px) {
   .cab__nav__menu {
@@ -67,23 +67,22 @@
   clear: left;
 }
 
-.cab__nav__menu li a {
+/* .cab__nav__menu li a {
   text-decoration: none;
   color: rgb(0, 0, 0);
-}
+} */
 
-.cab__nav__menu li a:hover {
+/* .cab__nav__menu li a:hover {
   background-color: rgb(0, 0, 0);
   border-radius: 2cm;
   color: white;
 }
+ */
 
-.tit {
-  grid-area: titulo;
-  background-color: orange;
-  text-align: center;
-  text-transform: uppercase;
+.navbar a{
+  color: #ffa500;
 }
+
 
 /* Pagina Principal */
 
@@ -227,7 +226,8 @@ ul {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: orange;
+  background: linear-gradient(270deg, rgba(39,38,38,1) 69%, rgba(50,33,2,1) 100%, rgba(255,165,0,1) 100%);
+  color: orange;
 }
 
 .footer img {
@@ -242,4 +242,5 @@ ul {
 .footer__contacto--linkarriba:hover {
   background-color: black;
   color: white;
+  border-radius: 5px;
 }
