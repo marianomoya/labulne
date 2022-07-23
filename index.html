@@ -11,7 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css" />
-  
+
   <title>Labulne</title>
 </head>
 
@@ -19,13 +19,14 @@
 
 
   <div class="grid__container">
-   
+
     <!-- Inicio del menu -->
 
     <header class="cab" id="head">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./assets/logo1.png" alt="logo_negocio" width="100" height="80" class="cab__nav__menu__imagen" /></a>
+          <a class="navbar-brand" href="#"><img src="./assets/logo1.png" alt="logo_negocio" width="100" height="80"
+              class="cab__nav__menu__imagen" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -36,21 +37,19 @@
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="./views/cervezas.html">Cervezas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="./views/destilados.html">Destilados</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link" href="#">Contacto</a>
               </li>
             </ul>
+            <form class="d-flex search_bar" role="search">
+              <input class="form-control mx-1" type="search" placeholder="Busca un producto" aria-label="Search">
+            </form>
           </div>
-        </div>
-        <div class="container-fluid">
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Busca un producto" aria-label="Search">
-          </form>
         </div>
       </nav>
     </header>
