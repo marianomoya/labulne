@@ -205,7 +205,7 @@ ul {
 
 .footer__contacto--linkarriba {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: orange;
 }
 
 .footer__contacto--linkarriba:hover {
