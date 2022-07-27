@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+  }
+  
+  .body {
+    min-height: 100%;
+  }
+  
+  .grid__container {
+    display: grid;
+    grid-template-areas:
+      "titulo titulo"
+      "header header"
+      "imagen texto"
+      "footer footer";
+  
+  }
+  
+  @media screen and (max-width: 768px) {
+    .grid__container {
+      display: grid;
+      grid-template-areas:
+        "titulo titulo"
+        "header header"
+        "imagen imagen"
+        "texto texto"
+        "footer footer";
+    }
+  }
+  
+  /* Header */
+  
+  .cab {
+    grid-area: header;
+    background: linear-gradient(180deg, rgba(39, 38, 38, 1) 63%, rgba(115, 75, 4, 1) 96%, rgba(255, 165, 0, 1) 100%);
+  }
+  
+  
+  @media screen and (max-width: 560px) {
+    .cab__nav__menu {
+      flex-direction: column;
+      padding-bottom: 0.5cm;
+    }
+  
+    .cab__nav__menu li {
+      justify-self: space-around;
+      align-self: end;
+    }
+  }
+  
+  .navbar a {
+    color: #ffa500;
+  }
+  
+  .navbar-nav>li {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  
+  /* Pagina Principal */
+  
+  .bg {
+    background-image: url(../assets/stockamarillo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+  }
+  
+  .seccion1 {
+    grid-area: imagen;
+  }
+  
+  .seccion2 {
+    grid-area: texto;
+    height: 10cm;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  
+  /* Pagina Sobre Nosotros */
+  
+  .info {
+    background-image: url(../assets/stockamarillo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .info--derecha {
+    text-align: right;
+  }
+  
+  /*  Pagina Productos */
+  .prod {
+    background-image: url(../assets/stockamarillo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1cm;
+  }
+  
+  .prod__bebidas__cervezas {
+    padding-top: 2rem;
+    text-align: center;
+  }
+  
+  .prod__bebidas__flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  @media screen and (max-width: 880px) {
+    .prod__bebidas__flex {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  
+  
+  .prod__comestibles {
+    padding-top: 2cm;
+  }
+  
+  .textocolor {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    animation-name: colores;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    text-align: center;
+    padding-top: 1cm;
+  }
+  
+  @keyframes colores {
+    0% {
+      color: red;
+    }
+  
+    25% {
+      color: orange;
+    }
+  
+    50% {
+      color: yellow;
+    }
+  
+    75% {
+      color: greenyellow;
+    }
+  
+    100% {
+      color: green;
+    }
+  }
+  
+  /* Pagina Locales */
+  
+  .mapa {
+    background-image: url(../assets/stockamarillo.jpg);
+    text-align: center;
+  }
+  
+  /* Pagina Contacto */
+  
+  .formulario {
+    background-image: url(../assets/stockamarillo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1cm;
+  }
+  
+  .formulario__campo {
+    border: 10px solid rgb(255, 153, 0);
+  }
+  
+  .formulario__campo p {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  
+  .footer {
+    grid-area: footer;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(270deg, rgba(39, 38, 38, 1) 69%, rgba(50, 33, 2, 1) 100%, rgba(255, 165, 0, 1) 100%);
+    color: orange;
+  }
+  
+  .footer img {
+    cursor: pointer;
+  }
+  
+  .footer__contacto--linkarriba {
+    text-decoration: none;
+    color: orange;
+  }
+  
+  .footer__contacto--linkarriba:hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+  }

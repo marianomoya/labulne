@@ -1,0 +1,25 @@
+{
+  "name": "labulne__moya_mariano",
+  "version": "1.0.0",
+  "description": "Repositorio hecho para los desafios de la plataforma CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianomoya/labulne.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marianomoya/labulne/issues"
+  },
+  "homepage": "https://github.com/marianomoya/labulne#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
