@@ -1,9 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
-  box-sizing: border-box;
-  /* border: 1px solid black; */ }
+  font-family: "Lato", sans-serif; }
+
+ul {
+  list-style: none; }
 
 .body {
   min-height: 100%; }
@@ -12,23 +13,10 @@
   display: grid;
   grid-template-areas: "titulo titulo" "header header" "imagen texto" "footer footer"; }
 
-@media screen and (max-width: 768px) {
-  .grid__container {
-    display: grid;
-    grid-template-areas: "titulo titulo" "header header" "imagen imagen" "texto texto" "footer footer"; } }
-
 /* Header */
 .cab {
   grid-area: header;
   background: linear-gradient(180deg, #272626 63%, #734b04 96%, orange 100%); }
-
-@media screen and (max-width: 560px) {
-  .cab__nav__menu {
-    flex-direction: column;
-    padding-bottom: 0.5cm; }
-  .cab__nav__menu li {
-    justify-self: space-around;
-    align-self: end; } }
 
 .navbar a {
   color: #ffa500; }
@@ -79,14 +67,6 @@
   display: flex;
   justify-content: space-around; }
 
-ul {
-  list-style: none; }
-
-@media screen and (max-width: 880px) {
-  .prod__bebidas__flex {
-    flex-direction: column;
-    justify-content: space-between; } }
-
 .prod__comestibles {
   padding-top: 2cm; }
 
@@ -126,10 +106,9 @@ ul {
 
 .formulario__campo {
   border: 10px solid #ff9900; }
-
-.formulario__campo p {
-  text-transform: uppercase;
-  font-weight: bold; }
+  .formulario__campo p {
+    text-transform: uppercase;
+    font-weight: bold; }
 
 /* Footer */
 .footer {
@@ -139,15 +118,25 @@ ul {
   width: 100%;
   background: linear-gradient(270deg, #272626 69%, #322102 100%, orange 100%);
   color: orange; }
-
-.footer img {
-  cursor: pointer; }
+  .footer img {
+    cursor: pointer; }
 
 .footer__contacto--linkarriba {
   text-decoration: none;
   color: orange; }
+  .footer__contacto--linkarriba:hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px; }
 
-.footer__contacto--linkarriba:hover {
-  background-color: black;
-  color: white;
-  border-radius: 5px; }
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .grid__container {
+    display: grid;
+    grid-template-areas: "titulo titulo" "header header" "imagen imagen" "texto texto" "footer footer"; } }
+
+@media screen and (max-width: 880px) {
+  .prod__bebidas__flex {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; } }
