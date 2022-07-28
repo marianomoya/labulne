@@ -1,0 +1,17 @@
+.cab {
+    grid-area: header;
+    background: linear-gradient(180deg, rgba(39, 38, 38, 1) 63%, rgba(115, 75, 4, 1) 96%, rgba(255, 165, 0, 1) 100%);
+}
+
+.navbar {
+    a {
+        color: #ffa500;
+    }
+}
+
+.navbar-nav {
+    >li {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
