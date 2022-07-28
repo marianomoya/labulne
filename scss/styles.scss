@@ -1,12 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Lato", sans-serif;
-}
-
-ul {
-    list-style: none;
-}
+@import "reset";
 
 .body {
     min-height: 100%;
@@ -23,24 +15,7 @@ ul {
 
 /* Header */
 
-.cab {
-    grid-area: header;
-    background: linear-gradient(180deg, rgba(39, 38, 38, 1) 63%, rgba(115, 75, 4, 1) 96%, rgba(255, 165, 0, 1) 100%);
-}
-
-.navbar {
-    a {
-        color: #ffa500;
-    }
-}
-
-.navbar-nav {
-    >li {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-}
-
+@import "header";
 
 /* Pagina Principal */
 
@@ -78,59 +53,7 @@ ul {
 
 /*  Pagina Productos */
 
-.prod {
-    background-image: url(../assets/stockamarillo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 1cm;
-}
-
-.prod__bebidas__cervezas {
-    padding-top: 2rem;
-    text-align: center;
-}
-
-.prod__bebidas__flex {
-    display: flex;
-    justify-content: space-around;
-}
-
-.prod__comestibles {
-    padding-top: 2cm;
-}
-
-.textocolor {
-    color: rgb(0, 0, 0);
-    font-size: 50px;
-    animation-name: colores;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-delay: 1s;
-    text-align: center;
-    padding-top: 1cm;
-}
-
-@keyframes colores {
-    0% {
-        color: red;
-    }
-
-    25% {
-        color: orange;
-    }
-
-    50% {
-        color: yellow;
-    }
-
-    75% {
-        color: greenyellow;
-    }
-
-    100% {
-        color: green;
-    }
-}
+@import "productos";
 
 /* Pagina Locales */
 
