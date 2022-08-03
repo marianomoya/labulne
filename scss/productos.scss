@@ -1,9 +1,3 @@
-.prod {
-    background-image: url(../assets/stockamarillo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 1cm;
-}
 
 .prod__bebidas__cervezas {
     padding-top: 2rem;
@@ -11,8 +5,8 @@
 }
 
 .prod__bebidas__flex {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .prod__comestibles {
