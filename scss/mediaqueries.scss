@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+    .grid__container {
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo"
+        "header header"
+        "imagen imagen"
+        "texto texto"
+        "footer footer";
+    }
+}
+
+
+
+@media screen and (max-width: 880px) {
+    .prod__bebidas__flex {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
