@@ -88,7 +88,8 @@ ul {
 .info {
   background-image: url("../assets/stockamarillo.jpg");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-repeat: repeat-y; }
 
 .info--derecha {
   text-align: right; }
@@ -96,13 +97,17 @@ ul {
 /* Pagina Locales */
 .mapa {
   background-image: url("../assets/stockamarillo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   text-align: center; }
 
 /* Pagina Contacto */
 .formulario {
   background-image: url("../assets/stockamarillo.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   padding-top: 1cm; }
 
 .formulario__campo {

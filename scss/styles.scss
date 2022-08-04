@@ -9,6 +9,13 @@
 
 $imagenprincipal: "../assets/stockamarillo.jpg";
 
+@mixin fondo{
+    background-image: url($imagenprincipal);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+}
+
 .body {
     min-height: 100%;
 }
@@ -25,10 +32,7 @@ $imagenprincipal: "../assets/stockamarillo.jpg";
 /* Pagina Principal */
 
 .bg {
-    background-image: url($imagenprincipal);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-repeat: repeat-y;
+   @include fondo;
 }
 
 .seccion1 {
@@ -47,9 +51,7 @@ $imagenprincipal: "../assets/stockamarillo.jpg";
 /* Pagina Sobre Nosotros */
 
 .info {
-    background-image: url($imagenprincipal);
-    background-size: cover;
-    background-repeat: no-repeat;
+ @include fondo;
 }
 
 .info--derecha {
@@ -60,16 +62,14 @@ $imagenprincipal: "../assets/stockamarillo.jpg";
 /* Pagina Locales */
 
 .mapa {
-    background-image: url($imagenprincipal);
+    @include fondo;
     text-align: center;
 }
 
 /* Pagina Contacto */
 
 .formulario {
-    background-image: url($imagenprincipal);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include fondo;
     padding-top: 1cm;
 }
 
