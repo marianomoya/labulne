@@ -28,28 +28,6 @@ ul {
 .prod__comestibles {
   padding-top: 2cm; }
 
-.textocolor {
-  color: black;
-  font-size: 50px;
-  animation-name: colores;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
-  animation-delay: 1s;
-  text-align: center;
-  padding-top: 1cm; }
-
-@keyframes colores {
-  0% {
-    color: red; }
-  25% {
-    color: orange; }
-  50% {
-    color: yellow; }
-  75% {
-    color: greenyellow; }
-  100% {
-    color: green; } }
-
 /* Footer */
 .footer {
   grid-area: footer;
