@@ -73,6 +73,15 @@ ul {
   background-repeat: no-repeat;
   background-repeat: repeat-y; }
 
+.titulo {
+  grid-area: titulo;
+  background-color: #272626;
+  color: orange;
+  margin-bottom: -0.2cm;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  text-align: center; }
+
 .seccion1 {
   grid-area: imagen; }
 

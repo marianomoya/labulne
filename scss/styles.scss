@@ -35,6 +35,16 @@ $imagenprincipal: "../assets/stockamarillo.jpg";
    @include fondo;
 }
 
+.titulo {
+    grid-area:titulo;
+    background-color:rgba(39, 38, 38, 1);
+    color: orange;
+    margin-bottom:-0.2cm;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    text-align:center;
+}
+
 .seccion1 {
     grid-area: imagen;
 }
