@@ -25,7 +25,7 @@ $imagenprincipal: "../assets/stockamarillo.jpg";
     grid-template-areas: 
     "titulo titulo"
     "header header"
-    "imagen texto"
+    "principal principal"
     "footer footer";
 }
 
@@ -43,6 +43,10 @@ $imagenprincipal: "../assets/stockamarillo.jpg";
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     text-align:center;
+}
+
+.principal{
+    grid-area:principal;
 }
 
 .seccion1 {

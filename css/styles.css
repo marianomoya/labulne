@@ -64,7 +64,7 @@ ul {
 
 .grid__container {
   display: grid;
-  grid-template-areas: "titulo titulo" "header header" "imagen texto" "footer footer"; }
+  grid-template-areas: "titulo titulo" "header header" "principal principal" "footer footer"; }
 
 /* Pagina Principal */
 .bg {
@@ -81,6 +81,9 @@ ul {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   text-align: center; }
+
+.principal {
+  grid-area: principal; }
 
 .seccion1 {
   grid-area: imagen; }
