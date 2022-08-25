@@ -36,7 +36,9 @@ ul {
 /* Footer */
 .footer {
   grid-area: footer;
+  position: fixed;
   width: 100%;
+  bottom: 0;
   background: linear-gradient(180deg, #272626 63%, #734b04 96%);
   color: orange; }
   .footer img {
@@ -71,7 +73,7 @@ ul {
 
 /* Pagina Principal */
 .bg {
-  background-image: url("../assets/stockamarillo.jpg");
+  background-image: url("../assets/stockamarillopolygon.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-repeat: repeat-y; }
@@ -99,27 +101,52 @@ ul {
   text-align: center;
   justify-content: center; }
 
-/* Pagina Sobre Nosotros */
-.info {
-  background-image: url("../assets/stockamarillo.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-repeat: repeat-y; }
+/* Pagina Donde Encontrarnos */
+.main__dondeencontrarnos {
+  display: grid;
+  grid-template-areas: "texto mapa" "imag imag"; }
 
-.info--derecha {
-  text-align: right; }
+.texto__mapa {
+  grid-area: texto;
+  text-align: center;
+  font-style: italic;
+  margin-top: 21%;
+  line-height: 5rem;
+  animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms; }
 
-/* Pagina Locales */
+@keyframes reveal {
+  80% {
+    letter-spacing: 1px; }
+  100% {
+    background-size: 300% 300%; } }
+
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #3a3737; } }
+
 .mapa {
-  background-image: url("../assets/stockamarillo.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-repeat: repeat-y;
+  grid-area: mapa;
+  margin-top: 18%; }
+
+.galeria {
+  grid-area: imag;
+  display: flex;
+  justify-content: space-around; }
+
+.galeria__item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px; }
+  .galeria__item:hover {
+    border: 1px solid #777; }
+
+.desc {
+  padding: 15px;
   text-align: center; }
 
 /* Pagina Contacto */
 .formulario {
-  background-image: url("../assets/stockamarillo.jpg");
+  background-image: url("../assets/stockamarillopolygon.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-repeat: repeat-y;

@@ -7,7 +7,7 @@
 
 /* Variables */
 
-$imagenprincipal: "../assets/stockamarillo.jpg";
+$imagenprincipal: "../assets/stockamarillopolygon.jpg";
 
 @mixin fondo{
     background-image: url($imagenprincipal);
@@ -62,23 +62,64 @@ $imagenprincipal: "../assets/stockamarillo.jpg";
     justify-content: center;
 }
 
-/* Pagina Sobre Nosotros */
+/* Pagina Donde Encontrarnos */
 
-.info {
- @include fondo;
+.main__dondeencontrarnos{
+    display: grid;
+    grid-template-areas: 
+    "texto mapa"
+    "imag imag";
 }
 
-.info--derecha {
-    text-align: right;
-}
+.texto__mapa{
+    grid-area: texto;
+    text-align: center;
+    font-style: italic;
+    margin-top:21%;
+    line-height: 5rem;
+    animation: reveal 3000ms ease-in-out forwards 200ms,
+             glow 2500ms linear infinite 2000ms;
 
+  @keyframes reveal {
+    80%{
+      letter-spacing: 1px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px rgb(58, 55, 55);
+    }
+  }
+}  
 
-/* Pagina Locales */
 
 .mapa {
-    @include fondo;
-    text-align: center;
+    grid-area: mapa;
+    margin-top:18%;
 }
+
+.galeria{
+    grid-area:imag;
+    display:flex;
+    justify-content:space-around;
+}
+
+.galeria__item {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 180px;
+    &:hover{
+        border: 1px solid #777;
+    }
+  }
+  
+  .desc {
+    padding: 15px;
+    text-align: center;
+  }
 
 /* Pagina Contacto */
 
