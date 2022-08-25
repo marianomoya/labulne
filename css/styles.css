@@ -8,6 +8,9 @@ ul {
 
 .cab {
   grid-area: header;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   background: linear-gradient(180deg, #272626 63%, #734b04 96%, orange 100%); }
 
 .navbar a {
@@ -17,24 +20,24 @@ ul {
   padding-left: 40px;
   padding-right: 40px; }
 
+.grid_container {
+  text-align: center; }
+
 .prod__bebidas__cervezas {
+  grid-area: cervezas;
   padding-top: 2rem;
   text-align: center; }
 
-.prod__bebidas__flex {
+.prod__bebidas__grid {
   display: grid;
+  margin: 8%;
   grid-template-columns: repeat(4, 1fr); }
-
-.prod__comestibles {
-  padding-top: 2cm; }
 
 /* Footer */
 .footer {
   grid-area: footer;
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  background: linear-gradient(0deg, #272626 63%, #734b04 96%, orange 100%);
+  background: linear-gradient(180deg, #272626 63%, #734b04 96%);
   color: orange; }
   .footer img {
     cursor: pointer; }

@@ -1,15 +1,14 @@
-
+.grid_container{
+    text-align: center;
+}
 .prod__bebidas__cervezas {
+    grid-area: cervezas;
     padding-top: 2rem;
     text-align: center;
 }
 
-.prod__bebidas__flex {
+.prod__bebidas__grid {
     display: grid;
+    margin:8%;
     grid-template-columns: repeat(4, 1fr);
 }
-
-.prod__comestibles {
-    padding-top: 2cm;
-}
-
