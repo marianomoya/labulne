@@ -1,5 +1,8 @@
 .cab {
     grid-area: header;
+    position:fixed;
+    width:100%;
+    z-index: 1;
     background: linear-gradient(180deg, rgba(39, 38, 38, 1) 63%, rgba(115, 75, 4, 1) 96%, rgba(255, 165, 0, 1) 100%);
 }
 
