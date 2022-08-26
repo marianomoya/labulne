@@ -58,27 +58,91 @@
           </div>
         </div>
       </nav>
-      
+
     </header>
 
     <!-- Fin del menu -->
 
     <!-- Inicio de la descripcion -->
-    
-<main class="principal">
-    <aside class="seccion1">
-      <img src="./assets/gentetomando.jpg" alt="" width="550" height="400">
-    </aside>
-    <aside class="seccion2">
-      <h2>Somos Labulne</h2>
-      <p class="seccion2__texto">
-        <strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ratione
-          pariatur in sit culpa harum quo mollitia nostrum, quidem veritatis?
-          Doloremque perspiciatis nisi dolore unde! Distinctio cupiditate eum
-          quia. Sapiente!</strong>
-      </p>
-    </aside>
-  </main>
+
+    <main class="main_index">
+      <div class="principal">
+        <div class="seccion1">
+          <h2>Somos Labulne</h2>
+          <p class="seccion1__texto">
+            <strong> Un almacen de bebidas en San Miguel de tucuman, con una excelentisima atencion al cliente.</strong>
+          </p>
+          <p>En nuestro local encontraras productos como:</p>
+          <ul class="listaproductos">
+            <li>
+              <p>Cervezas</p>
+            </li>
+            <li>
+              <p>Vodkas</p>
+            </li>
+            <li>
+              <p>Whiskys</p>
+            </li>
+            <li>
+              <p>Comestibles</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="carousel">
+          <ul class="slides">
+            <input type="radio" name="radio-buttons" id="img-1" checked />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="/assets/portada-cerveza.jpg">
+              </div>
+              <div class="carousel-controls">
+                <label for="img-3" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-2" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-2" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="/assets/portada-vodka.jpg">
+              </div>
+              <div class="carousel-controls">
+                <label for="img-1" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-3" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <input type="radio" name="radio-buttons" id="img-3" />
+            <li class="slide-container">
+              <div class="slide-image">
+                <img src="/assets/portada-whiskys.jpg">
+              </div>
+              <div class="carousel-controls">
+                <label for="img-2" class="prev-slide">
+                  <span>&lsaquo;</span>
+                </label>
+                <label for="img-1" class="next-slide">
+                  <span>&rsaquo;</span>
+                </label>
+              </div>
+            </li>
+            <div class="carousel-dots">
+              <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+              <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+              <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </main>
     <!--  Fin de la descripcion -->
 
     <!--  Inicio del footer -->
