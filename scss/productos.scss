@@ -1,6 +1,7 @@
-.grid_container{
+.grid_container {
     text-align: center;
 }
+
 .prod__bebidas__cervezas {
     grid-area: cervezas;
     padding-top: 2rem;
@@ -9,6 +10,13 @@
 
 .prod__bebidas__grid {
     display: grid;
-    margin:8%;
+    margin: 8%;
     grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    border: 5px solid rgb(59, 59, 59);
+    box-shadow: 12px 12px 8px 4px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 12px 12px 8px 4px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 12px 12px 8px 4px rgba(0, 0, 0, 0.58);
 }
