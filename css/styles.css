@@ -63,7 +63,12 @@ ol {
   width: 100%;
   margin-top: 15%;
   margin-bottom: -20%;
-  margin-left: 26%; }
+  margin-left: 26%;
+  animation: glow 2500ms linear infinite 2000ms; }
+
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #3a3737; } }
 
 .seccion1 {
   height: 20cm;
@@ -203,6 +208,12 @@ input:checked + .slide-container .nav label {
   margin: 8%;
   grid-template-columns: repeat(4, 1fr); }
 
+.card {
+  border: 5px solid #3b3b3b;
+  box-shadow: 12px 12px 8px 4px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: 12px 12px 8px 4px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 12px 12px 8px 4px rgba(0, 0, 0, 0.58); }
+
 /* Pagina Donde Encontrarnos */
 .main__dondeencontrarnos {
   display: grid;
@@ -339,7 +350,7 @@ textarea {
 
 @media screen and (max-width: 880px) {
   .cabProductos {
-    width: 84%; }
+    width: 100%; }
   .prod__bebidas__flex {
     flex-direction: column;
     justify-content: space-between;
@@ -356,7 +367,10 @@ textarea {
   .texto__mapa {
     margin-top: -20%;
     margin-right: 20%;
-    font-size: 15px; } }
+    font-size: 15px; }
+  .prod__bebidas__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 1060px) {
   .texto__mapa {
@@ -368,7 +382,10 @@ textarea {
   .carousel {
     opacity: 0; }
   .cabProductos {
-    width: 33%; }
+    width: 100%; }
+  .prod__bebidas__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
   .cabDE {
     width: 56%; }
   .texto__mapa {
@@ -389,7 +406,7 @@ textarea {
   .footerDE {
     width: 59%; }
   .footerProductos {
-    width: 35%; } }
+    width: 100%; } }
 
 @media screen and (max-width: 915px) {
   .carousel {
