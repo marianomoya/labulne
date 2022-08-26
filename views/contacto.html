@@ -57,32 +57,12 @@
   <main>
     <!-- Inicio del formulario -->
 
-    <section class="formulario">
-      <form action="">
-        <fieldset class="formulario__campo">
-          <p>Si desea recibir todas nuestras ofertas, complete el siguiente formulario</p>
-          <label for="nombre">Nombre</label>
-          <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu Nombre" />
-          <label for="apellido">Apellido</label>
-          <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu Apellido" />
-          <br />
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Ingresa tu Correo Electronico" />
-          <br />
-          <label for="estado_civil">Estado Civil</label>
-          <select name="estado_civil" id="estado_civil">
-            <option value="">Estado Civil</option>
-            <option value="s">Soltero/a</option>
-            <option value="c">Casado/a</option>
-          </select>
-          <br>
-          <textarea name="comentario" id="comentario" cols="40" rows="10" maxlength="200"></textarea>
-          <br>
-          <input type="submit" value="Enviar Formulario" />
-          <input type="reset" value="Limpiar Formulario">
-        </fieldset>
-      </form>
-    </section>
+    <form class="formulario">      
+      <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+      <input name="email" type="text" class="feedback-input" placeholder="Email" />
+      <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+      <input type="submit" value="SUBMIT"/>
+    </form>
   </main>
   <!-- Fin del formulario -->
 
