@@ -1,6 +1,6 @@
 /* Footer */
 
-.footer {
+.footerIndex {
     grid-area: footer;
     position:fixed;
     width: 100%;
@@ -12,12 +12,36 @@
     }
 }
 
-.footer__contacto--linkarriba {
-    text-decoration: none;
+.footerDE {
+    grid-area: footer;
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(39, 38, 38, 1) 63%, rgba(115, 75, 4, 1) 96%);
     color: orange;
-    &:hover {
-        background-color: black;
-        color: white;
-        border-radius: 5px;
+    img {
+        cursor: pointer;
     }
 }
+
+.footerProductos {
+    grid-area: footer;
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(39, 38, 38, 1) 63%, rgba(115, 75, 4, 1) 96%);
+    color: orange;
+    img {
+        cursor: pointer;
+    }
+}
+
+.footerContacto {
+    grid-area: footer;
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(39, 38, 38, 1) 63%, rgba(115, 75, 4, 1) 96%);
+    color: orange;
+}
+
