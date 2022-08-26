@@ -1,0 +1,56 @@
+/* Pagina Donde Encontrarnos */
+
+.main__dondeencontrarnos{
+    display: grid;
+    grid-template-areas: 
+    "texto mapa"
+    "imag imag";
+}
+
+.texto__mapa{
+    grid-area: texto;
+    text-align: center;
+    font-style: italic;
+    margin-top:21%;
+    padding-top:12%;
+    line-height: 5rem;
+    animation: reveal 3000ms ease-in-out forwards 200ms,
+             glow 2500ms linear infinite 2000ms;
+
+  @keyframes reveal {
+    80%{
+      letter-spacing: 1px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px rgb(58, 55, 55);
+    }
+  }
+}  
+
+.mapa {
+    grid-area: mapa;
+    margin-top:18%;
+}
+
+.galeria{
+    grid-area:imag;
+    background: rgb(39,38,38);
+    background: radial-gradient(circle, rgba(39,38,38,1) 80%, rgba(50,33,2,1) 100%, rgba(255,165,0,1) 100%);
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:11%;
+    border-radius:25px;
+    padding-top:20px;
+    padding-right:6%;
+}
+
+.galeria__item {
+    margin: 5px;
+    width: 180px;
+  }
+  
