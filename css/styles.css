@@ -6,7 +6,28 @@
 ul {
   list-style: none; }
 
-.cab {
+.cabIndex {
+  grid-area: header;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg, #272626 63%, #734b04 96%, orange 100%); }
+
+.cabContacto {
+  grid-area: header;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg, #272626 63%, #734b04 96%, orange 100%); }
+
+.cabDE {
+  grid-area: header;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg, #272626 63%, #734b04 96%, orange 100%); }
+
+.cabProductos {
   grid-area: header;
   position: fixed;
   width: 100%;
@@ -33,24 +54,87 @@ ul {
   margin: 8%;
   grid-template-columns: repeat(4, 1fr); }
 
+/* Pagina Donde Encontrarnos */
+.main__dondeencontrarnos {
+  display: grid;
+  grid-template-areas: "texto mapa" "imag imag"; }
+
+.texto__mapa {
+  grid-area: texto;
+  text-align: center;
+  font-style: italic;
+  margin-top: 21%;
+  padding-top: 12%;
+  line-height: 5rem;
+  animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms; }
+
+@keyframes reveal {
+  80% {
+    letter-spacing: 1px; }
+  100% {
+    background-size: 300% 300%; } }
+
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #3a3737; } }
+
+.mapa {
+  grid-area: mapa;
+  margin-top: 18%; }
+
+.galeria {
+  grid-area: imag;
+  background: #272626;
+  background: radial-gradient(circle, #272626 80%, #322102 100%, orange 100%);
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 11%;
+  border-radius: 25px;
+  padding-top: 20px;
+  padding-right: 6%; }
+
+.galeria__item {
+  margin: 5px;
+  width: 180px; }
+
 /* Footer */
-.footer {
+.footerIndex {
   grid-area: footer;
   position: fixed;
   width: 100%;
   bottom: 0;
   background: linear-gradient(180deg, #272626 63%, #734b04 96%);
   color: orange; }
-  .footer img {
+  .footerIndex img {
     cursor: pointer; }
 
-.footer__contacto--linkarriba {
-  text-decoration: none;
+.footerDE {
+  grid-area: footer;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(180deg, #272626 63%, #734b04 96%);
   color: orange; }
-  .footer__contacto--linkarriba:hover {
-    background-color: black;
-    color: white;
-    border-radius: 5px; }
+  .footerDE img {
+    cursor: pointer; }
+
+.footerProductos {
+  grid-area: footer;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(180deg, #272626 63%, #734b04 96%);
+  color: orange; }
+  .footerProductos img {
+    cursor: pointer; }
+
+.footerContacto {
+  grid-area: footer;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(180deg, #272626 63%, #734b04 96%);
+  color: orange; }
 
 @media screen and (max-width: 768px) {
   .grid__container {
@@ -58,10 +142,56 @@ ul {
     grid-template-areas: "titulo titulo" "header header" "imagen imagen" "texto texto" "footer footer"; } }
 
 @media screen and (max-width: 880px) {
+  .cabProductos {
+    width: 84%; }
   .prod__bebidas__flex {
     flex-direction: column;
     justify-content: space-between;
-    align-items: center; } }
+    align-items: center; }
+  .main__dondeencontrarnos {
+    display: grid;
+    grid-template-areas: "texto texto" "mapa mapa" "imag imag"; }
+  .galeria {
+    margin-bottom: 25%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-left: 100%; }
+  .texto__mapa {
+    margin-top: -20%;
+    margin-right: 20%;
+    font-size: 15px; } }
+
+@media screen and (max-width: 1060px) {
+  .texto__mapa {
+    margin-top: 35%; } }
+
+@media screen and (min-width: 100px) and (max-width: 420px) {
+  .cabIndex {
+    width: 71%; }
+  .cabProductos {
+    width: 33%; }
+  .cabDE {
+    width: 56%; }
+  .texto__mapa {
+    font-size: 15px;
+    font-size-adjust: 0.3;
+    padding-left: 10%;
+    width: 50%;
+    line-height: 1rem; }
+  .galeria {
+    margin-bottom: 25%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    padding-left: -80%;
+    margin-left: -15%; }
+  .footerIndex {
+    width: 72%; }
+  .footerDE {
+    width: 59%; }
+  .footerProductos {
+    width: 35%; } }
 
 /* Variables */
 .body {
@@ -100,49 +230,6 @@ ul {
   flex-direction: column;
   text-align: center;
   justify-content: center; }
-
-/* Pagina Donde Encontrarnos */
-.main__dondeencontrarnos {
-  display: grid;
-  grid-template-areas: "texto mapa" "imag imag"; }
-
-.texto__mapa {
-  grid-area: texto;
-  text-align: center;
-  font-style: italic;
-  margin-top: 21%;
-  line-height: 5rem;
-  animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms; }
-
-@keyframes reveal {
-  80% {
-    letter-spacing: 1px; }
-  100% {
-    background-size: 300% 300%; } }
-
-@keyframes glow {
-  40% {
-    text-shadow: 0 0 8px #3a3737; } }
-
-.mapa {
-  grid-area: mapa;
-  margin-top: 18%; }
-
-.galeria {
-  grid-area: imag;
-  display: flex;
-  justify-content: space-around; }
-
-.galeria__item {
-  margin: 5px;
-  border: 1px solid #ccc;
-  width: 180px; }
-  .galeria__item:hover {
-    border: 1px solid #777; }
-
-.desc {
-  padding: 15px;
-  text-align: center; }
 
 /* Pagina Contacto */
 .formulario {
