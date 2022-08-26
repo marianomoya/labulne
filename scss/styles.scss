@@ -1,16 +1,19 @@
 @import "reset";
 @import "header";
+@import "index";
 @import "productos";
 @import "mapa";
+@import"contacto";
 @import "footer";
 @import "mediaqueries";
+
 
 
 /* Variables */
 
 $imagenprincipal: "../assets/stockamarillopolygon.jpg";
 
-@mixin fondo{
+@mixin fondo {
     background-image: url($imagenprincipal);
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,60 +26,14 @@ $imagenprincipal: "../assets/stockamarillopolygon.jpg";
 
 .grid__container {
     display: grid;
-    grid-template-areas: 
-    "titulo titulo"
-    "header header"
-    "principal principal"
-    "footer footer";
+    grid-template-areas:
+        "titulo titulo"
+        "header header"
+        "principal principal"
+        "car car"
+        "footer footer";
 }
-
-/* Pagina Principal */
 
 .bg {
-   @include fondo;
-}
-
-.titulo {
-    grid-area:titulo;
-    background-color:rgba(39, 38, 38, 1);
-    color: orange;
-    margin-bottom:-0.2cm;
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    text-align:center;
-}
-
-.principal{
-    grid-area:principal;
-}
-
-.seccion1 {
-    grid-area: imagen;
-}
-
-.seccion2 {
-    grid-area: texto;
-    height: 10cm;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
-
-
-/* Pagina Contacto */
-
-.formulario {
     @include fondo;
-    padding-top: 1cm;
 }
-
-.formulario__campo {
-    border: 10px solid rgb(255, 153, 0);
-    p {
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-}
-
-
