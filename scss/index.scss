@@ -10,7 +10,7 @@
     text-align: center;
 }
 
-.main_index{
+.main_index {
     text-align: center;
 }
 
@@ -20,14 +20,17 @@
     width: 100%;
     margin-top: 15%;
     margin-bottom: -20%;
-    margin-left:26%;
+    margin-left: 26%;
     animation: glow 2500ms linear infinite 2000ms;
+
     @keyframes glow {
         40% {
-          text-shadow: 0 0 8px rgb(58, 55, 55);
+            text-shadow: 0 0 8px rgb(58, 55, 55);
         }
-      }
+    }
 }
+
+/* texto principal */
 
 .seccion1 {
     height: 20cm;
@@ -36,18 +39,20 @@
     width: 100%;
 }
 
-.listaproductos{
+.listaproductos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+/* Carousel */
+
 .carousel {
     margin-left: 30%;
     margin-right: 15%;
     width: 130%;
-    margin-bottom:5%;
-    padding-right:40%;
+    margin-bottom: 5%;
+    padding-right: 40%;
 }
 
 ul.slides {
@@ -70,12 +75,12 @@ ul.slides {
 }
 
 ul.slides input {
-    display: none; 
+    display: none;
 }
 
 
-.slide-container { 
-    display: block; 
+.slide-container {
+    display: block;
 }
 
 .slide-image {
@@ -86,7 +91,7 @@ ul.slides input {
     top: 0;
     opacity: 0;
     transition: all .7s ease-in-out;
-}   
+}
 
 .slide-image img {
     width: auto;
@@ -114,7 +119,7 @@ ul.slides input {
     cursor: pointer;
 }
 
-.slide-image:hover + .carousel-controls label{
+.slide-image:hover+.carousel-controls label {
     opacity: 0.5;
 }
 
@@ -153,25 +158,26 @@ ul.slides input {
     margin: 10px;
 }
 
-input:checked + .slide-container .slide-image {
+input:checked+.slide-container .slide-image {
     opacity: 1;
     transform: scale(1);
     transition: opacity 1s ease-in-out;
 }
 
-input:checked + .slide-container .carousel-controls label {
-     display: block; 
+input:checked+.slide-container .carousel-controls label {
+    display: block;
 }
 
-input#img-1:checked ~ .carousel-dots label#img-dot-1,
-input#img-2:checked ~ .carousel-dots label#img-dot-2,
-input#img-3:checked ~ .carousel-dots label#img-dot-3,
-input#img-4:checked ~ .carousel-dots label#img-dot-4,
-input#img-5:checked ~ .carousel-dots label#img-dot-5,
-input#img-6:checked ~ .carousel-dots label#img-dot-6 {
-	opacity: 1;
+input#img-1:checked~.carousel-dots label#img-dot-1,
+input#img-2:checked~.carousel-dots label#img-dot-2,
+input#img-3:checked~.carousel-dots label#img-dot-3,
+input#img-4:checked~.carousel-dots label#img-dot-4,
+input#img-5:checked~.carousel-dots label#img-dot-5,
+input#img-6:checked~.carousel-dots label#img-dot-6 {
+    opacity: 1;
 }
 
 
-input:checked + .slide-container .nav label { display: block; }
-
+input:checked+.slide-container .nav label {
+    display: block;
+}

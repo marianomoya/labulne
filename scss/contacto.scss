@@ -1,49 +1,54 @@
 /* Pagina Contacto */
 
-.formulario{
-    max-width:420px;
-    margin:0px auto;
-    padding-top:5cm;
+.formulario {
+  max-width: 420px;
+  margin: 0px auto;
+  padding-top: 5cm;
 }
 
 .feedback-input {
-  color:rgba(39, 38, 38, 1);
+  color: rgba(39, 38, 38, 1);
   font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
+  font-weight: 500;
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #e49a10;
+  border: 2px solid #e49a10;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
-  width:100%;
+  width: 100%;
   box-sizing: border-box;
-  outline:0;
+  outline: 0;
 }
 
-.feedback-input:focus { border:5px solid #db8504; }
+.feedback-input:focus {
+  border: 5px solid #db8504;
+}
 
 textarea {
   height: 150px;
   line-height: 150%;
-  resize:vertical;
+  resize: vertical;
 }
 
 [type="submit"] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
-  background:rgba(39, 38, 38, 1);
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  color:white;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
+  background: rgba(39, 38, 38, 1);
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
+  margin-top: -4px;
+  font-weight: 700;
 }
-[type="submit"]:hover { background:#e49502; }
+
+[type="submit"]:hover {
+  background: #e49502;
+}
