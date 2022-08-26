@@ -13,7 +13,7 @@
 @media screen and (max-width: 880px) {
 
     .cabProductos{
-        width:84%;
+        width:100%;
     }
 
     .prod__bebidas__flex {
@@ -44,6 +44,11 @@
         font-size: 15px;
     }
 
+    .prod__bebidas__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 @media screen and (max-width: 1060px){
@@ -63,8 +68,14 @@
     }
 
     .cabProductos{
-        width:33%;
+        width:100%;
     }
+
+    .prod__bebidas__grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 
     .cabDE{
         width:56%;
@@ -96,7 +107,7 @@
     }
 
     .footerProductos{
-        width:35%;
+        width:100%;
     }
 }
 
