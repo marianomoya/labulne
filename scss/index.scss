@@ -21,6 +21,12 @@
     margin-top: 15%;
     margin-bottom: -20%;
     margin-left:26%;
+    animation: glow 2500ms linear infinite 2000ms;
+    @keyframes glow {
+        40% {
+          text-shadow: 0 0 8px rgb(58, 55, 55);
+        }
+      }
 }
 
 .seccion1 {
