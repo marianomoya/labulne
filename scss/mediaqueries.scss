@@ -58,6 +58,10 @@
         width:71%;
     }
 
+    .carousel{
+        opacity:0;
+    }
+
     .cabProductos{
         width:33%;
     }
@@ -93,5 +97,28 @@
 
     .footerProductos{
         width:35%;
+    }
+}
+
+@media screen and (max-width:915px){
+    .carousel{
+        margin-top: -23vh;
+        margin-left:20%;
+    }
+
+    .cabIndex{
+        width:85%;
+    }
+
+    .footerIndex{
+        position:fixed;
+        bottom:0;
+        width:89%;
+    }
+
+    .principal{
+        margin-top:20%;
+        margin-bottom:-10%;
+        margin-left:15%;
     }
 }
